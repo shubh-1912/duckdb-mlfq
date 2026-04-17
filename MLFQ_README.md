@@ -1,9 +1,8 @@
 # MLFQ Scheduler for DuckDB
-**CS544 — Database Systems Implementation**
+**CSCI 543 — Foundations of Modern Data Management and Processing**
 **Team:** Neel Gude, Shubh Mishra, Spoorthi Gowda — University of Southern California
 
 ---
-
 ## Project Overview
 
 This project implements a **Multi-Level Feedback Queue (MLFQ)** task scheduler inside DuckDB's morsel-driven parallel execution engine. The goal is to reduce tail latency for short "mouse" queries when they run concurrently with long-running "elephant" queries.
