@@ -175,24 +175,3 @@ To regenerate vanilla results (requires building the pristine branch):
 ### Why Mixed Workload Regresses
 
 In the Mixed Workload scenario, all queries start simultaneously. Elephant queries bulk-enqueue ~10,000 tasks into Q0 before demotion kicks in. Since mice's tasks are appended to Q0 after the elephant's tasks (FIFO ordering), they must wait. This is a known limitation of bulk-enqueue scheduling: MLFQ is most effective when short queries arrive *after* elephants have already been demoted.
-
----
-
-## Team Contributions
-
-| Member | Contribution |
-|--------|-------------|
-| **Shubh Mishra** | Repository setup, pristine branch, initial MLFQ architecture |
-| **Neel Gude** | MLFQ implementation, threshold tuning, per-query reset fix, benchmark, logging |
-| **Spoorthi Gowda** | Testing, benchmarking, report writing |
-
----
-
-## Branch Structure
-
-| Branch | Description |
-|--------|-------------|
-| `pristine` | Unmodified DuckDB (vanilla baseline) |
-| `main` | Shubh's main branch |
-| `mlfq-final` | Final MLFQ implementation (this branch) |
-| `develop` | Development branch with all MLFQ changes |
