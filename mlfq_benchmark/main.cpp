@@ -159,7 +159,7 @@ int main() {
     csv_file << "Scenario,QueryType,Latency_Microseconds\n";
     csv_file.close();
 
-    DuckDB db("tpch-sf1.db"); 
+    DuckDB db("../tpch-sf10.db"); 
     Connection setup_con(db);
     setup_con.Query("PRAGMA threads=4;");
     
