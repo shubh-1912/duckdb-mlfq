@@ -24,17 +24,6 @@ Worker threads always serve Q0 first, then Q1, then Q2. This ensures short mouse
 
 **Starvation prevention:** An aging mechanism promotes tasks from Q1/Q2 back to Q0 if they have waited more than 500ms.
 
----
-
-## Key Files Changed
-
-| File | Description |
-|------|-------------|
-| `src/parallel/task_scheduler.cpp` | Core MLFQ implementation |
-| `mlfq_benchmark/main.cpp` | TPC-H benchmark driver |
-| `mlfq_benchmark/generate_comparison_graph.py` | Graph generation (MLFQ vs Vanilla) |
-| `mlfq_benchmark/generate_graph.py` | MLFQ-only graph generation |
-| `mlfq_benchmark/vanilla_results.csv` | Saved vanilla DuckDB baseline results |
 
 ---
 
