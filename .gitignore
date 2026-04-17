@@ -356,3 +356,12 @@ extension_external
 
 test/sql/pragma/output.json
 tools/pythonpkg/duckdb_build/
+
+# MLFQ benchmark generated files
+*.duckdb
+mlfq_benchmark/build_win/
+mlfq_benchmark/*.log
+mlfq_latency_results.csv
+tpch_sf1.duckdb
+tpch_sf10.duckdb
+benchmark_graphs.png

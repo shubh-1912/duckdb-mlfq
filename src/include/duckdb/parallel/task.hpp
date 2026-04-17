@@ -58,6 +58,8 @@ public:
 
 public:
 	optional_ptr<ProducerToken> token;
+	uint64_t query_id = 0;  // Identifies which query this task belongs to
+	int priority_level = 0; // Current MLFQ priority level (0=high, 1=med, 2=low)
 };
 
 } // namespace duckdb
