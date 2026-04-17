@@ -1,5 +1,5 @@
 # MLFQ Scheduler for DuckDB
-**CSCI 543 — Foundations of Modern Data Management and Processing**
+**CSCI 543 — Foundations of Modern Data Management and Processing Project 2**
 **Team:** Neel Gude, Shubh Mishra, Spoorthi Gowda — University of Southern California
 
 ---
@@ -84,6 +84,7 @@ All events are logged to `stderr` for observability:
 - Visual Studio 2022 (with C++ workload)
 - CMake 3.21+
 - Python 3.x with `pandas`, `matplotlib`, `numpy`
+- Set the path for your database (sf-10 recommended) in main.cpp
 
 ### Build MLFQ DuckDB
 
